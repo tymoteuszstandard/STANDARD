@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>STANDARD</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+    .hover-highlight:hover {
+      color: #FF6A13;
+      transition: color 0.3s ease;
+    }
+    .orange-hover:hover {
+      color: #FF6A13;
+    }
+    .bg-hero {
+      background-image: url('Enscape_2025-06-13-15-34-30_WIZ-3.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+    .logo-overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  </style>
+</head>
+<body class="bg-white text-black">
+
+  <!-- HEADER -->
+  <header class="flex justify-between items-center px-8 py-4 bg-black text-white">
+    <h1 class="text-2xl font-bold cursor-pointer">STANDARD</h1>
+    <nav class="space-x-4">
+      <a href="#projekt1" class="hover-highlight">Projekt 1</a>
+      <a href="#uslugi" class="hover-highlight">Usługi</a>
+      <a href="#kontakt" class="hover-highlight">Kontakt</a>
+    </nav>
+  </header>
+
+  <!-- HERO / PROJEKT -->
+  <section class="h-screen bg-hero relative flex items-center justify-center">
+    <div class="absolute inset-0 logo-overlay flex items-center justify-center">
+      <h2 class="text-white text-5xl font-bold mix-blend-difference">STANDARD</h2>
+    </div>
+  </section>
+
+  <!-- PROJEKTY -->
+  <section id="projekt1" class="px-8 py-20">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-8">Projekt 1</h2>
+      <img src="Enscape_2025-06-13-15-34-30_WIZ-3.jpg" alt="Projekt 1" class="mb-6 w-full rounded">
+      <p class="text-base leading-relaxed text-gray-700 max-w-3xl">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus. Integer ornare tincidunt ante, eget eleifend ligula.
+      </p>
+    </div>
+  </section>
+
+  <!-- USŁUGI -->
+  <section id="uslugi" class="px-8 py-20 bg-gray-100">
+    <h2 class="text-3xl font-bold mb-12">Usługi</h2>
+    <div class="grid md:grid-cols-3 gap-16 text-left">
+      <div>
+        <h3 class="text-xl font-semibold mb-3">Projekt wnętrza</h3>
+        <p class="text-sm text-gray-600">Kompleksowe projekty wnętrz – od koncepcji po dokumentację techniczną.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-3">Wykonawstwo</h3>
+        <p class="text-sm text-gray-600">Realizacja projektów z dbałością o detale i terminowość.</p>
+      </div>
+      <div>
+        <h3 class="text-xl font-semibold mb-3">Projekt pod klucz</h3>
+        <p class="text-sm text-gray-600">Od projektu po realizację – gotowe wnętrze bez stresu i komplikacji.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section id="kontakt" class="px-8 py-24 bg-white text-black">
+    <div class="max-w-5xl mx-auto">
+      <h2 class="text-4xl font-bold mb-12">Kontakt</h2>
+      <div class="space-y-4 text-left text-base">
+        <p><span class="font-semibold">e-mail:</span> <a href="mailto:tymoteusz.standard@gmail.com" class="orange-hover">tymoteusz.standard@gmail.com</a></p>
+        <p><span class="font-semibold">telefon:</span> <a href="tel:+48509768566" class="orange-hover">+48 509 768 566</a></p>
+        <p><span class="font-semibold">NIP:</span> 8952279396</p>
+        <p>STANDARD — Tymoteusz Seredyński, Wrocław, Polska</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
